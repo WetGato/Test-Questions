@@ -1,6 +1,6 @@
 let questions = [];
 let currentQuestion = 0;
-let score = 0;
+let userAnswers = {};
 let flaggedQuestions = [];
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -12,43 +12,21 @@ function loadQuestions() {
         .then(response => response.json())
         .then(data => {
             questions = data;
-            shuffleArray(questions);  // Shuffle questions when loaded
+            shuffleArray(questions); // Shuffle questions
             renderQuestionList();
             displayQuestion();
-            document.getElementById("scoreDisplay").innerText = `Score: ${score}`;
+            document.getElementById("scoreDisplay").innerText = `Score: Not graded yet`;
         })
         .catch(error => console.error("Error loading questions:", error));
 }
 
 function startNewQuiz() {
-    // Reset state
     currentQuestion = 0;
-    score = 0;
+    userAnswers = {};
     flaggedQuestions = [];
-
-    // Clear cookies
-    setCookie("quizScore", 0, 7);
     setCookie("flaggedQuestions", JSON.stringify([]), 7);
-
-    // Reload and reshuffle questions
     loadQuestions();
-    document.getElementById("scoreDisplay").innerText = `Score: ${score}`;
-    document.getElementById("quizContainer").innerHTML = `
-        <h1>Quiz</h1>
-        <button onclick="startNewQuiz()">Start New Quiz</button>
-        <p id="question"></p>
-        <div id="options"></div>
-        <button onclick="submitAnswer()">Submit Answer</button>
-        <button onclick="toggleFlag()">Flag/Unflag</button>
-        <p id="scoreDisplay"></p>
-    `;
-}
-
-function shuffleArray(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-    }
+    document.getElementById("scoreDisplay").innerText = `Score: Not graded yet`;
 }
 
 function renderQuestionList() {
@@ -67,34 +45,33 @@ function renderQuestionList() {
 }
 
 function displayQuestion() {
-    if (currentQuestion >= questions.length) {
-        document.getElementById("quizContainer").innerHTML = `<h2>Quiz Complete!</h2><p>Final Score: ${score}</p>`;
-        setCookie("quizScore", score, 7);
-        return;
-    }
-    
     const questionElement = document.getElementById("question");
-    const optionsContainer = document.getElementById("options");
+    const optionsForm = document.getElementById("optionsForm");
 
     questionElement.innerText = questions[currentQuestion].question;
-    optionsContainer.innerHTML = "";
+    optionsForm.innerHTML = ""; // Clear previous options
 
-    questions[currentQuestion].options.forEach(option => {
-        const optionButton = document.createElement("button");
-        optionButton.innerText = option;
-        optionButton.onclick = () => selectOption(option);
-        optionsContainer.appendChild(optionButton);
+    questions[currentQuestion].options.forEach((option, index) => {
+        const optionContainer = document.createElement("div");
+        const optionInput = document.createElement("input");
+        optionInput.type = "radio";
+        optionInput.name = "option";
+        optionInput.value = option;
+        optionInput.checked = userAnswers[currentQuestion] === option;
+
+        optionInput.onclick = () => selectOption(option);
+        
+        const optionLabel = document.createElement("label");
+        optionLabel.innerText = option;
+
+        optionContainer.appendChild(optionInput);
+        optionContainer.appendChild(optionLabel);
+        optionsForm.appendChild(optionContainer);
     });
 }
 
 function selectOption(selected) {
-    if (selected === questions[currentQuestion].answer) {
-        score++;
-    }
-    currentQuestion++;
-    setCookie("quizScore", score, 7);
-    renderQuestionList();
-    displayQuestion();
+    userAnswers[currentQuestion] = selected;
 }
 
 function toggleFlag() {
@@ -108,20 +85,40 @@ function toggleFlag() {
     renderQuestionList();
 }
 
+function nextQuestion() {
+    if (currentQuestion < questions.length - 1) {
+        currentQuestion++;
+        displayQuestion();
+    }
+}
+
+function prevQuestion() {
+    if (currentQuestion > 0) {
+        currentQuestion--;
+        displayQuestion();
+    }
+}
+
+function gradeQuiz() {
+    let score = 0;
+    questions.forEach((question, index) => {
+        if (userAnswers[index] === question.answer) {
+            score++;
+        }
+    });
+    document.getElementById("scoreDisplay").innerText = `Score: ${score} / ${questions.length}`;
+}
+
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+}
+
 function setCookie(name, value, days) {
     const date = new Date();
     date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
     const expires = `expires=${date.toUTCString()}`;
     document.cookie = `${name}=${value};${expires};path=/`;
-}
-
-function getCookie(name) {
-    const nameEQ = `${name}=`;
-    const cookies = document.cookie.split(';');
-    for (let i = 0; i < cookies.length; i++) {
-        let cookie = cookies[i];
-        while (cookie.charAt(0) === ' ') cookie = cookie.substring(1);
-        if (cookie.indexOf(nameEQ) === 0) return cookie.substring(nameEQ.length, cookie.length);
-    }
-    return null;
 }
