@@ -35,6 +35,9 @@ function renderQuestionList() {
     questions.forEach((_, index) => {
         const listItem = document.createElement("li");
         listItem.innerText = `Question ${index + 1}`;
+        if (flaggedQuestions.includes(index)) {
+            listItem.innerText += " 🚩"; // Add flag emoji if flagged
+        }
         listItem.className = flaggedQuestions.includes(index) ? "flagged" : "";
         listItem.onclick = () => {
             currentQuestion = index;
@@ -103,11 +106,36 @@ function prevQuestion() {
 function gradeQuiz() {
     let score = 0;
     questions.forEach((question, index) => {
-        if (userAnswers[index] === question.answer) {
-            score++;
-        }
+        const isCorrect = userAnswers[index] === question.answer;
+        if (isCorrect) score++;
     });
+
     document.getElementById("scoreDisplay").innerText = `Score: ${score} / ${questions.length}`;
+    displayResults();
+}
+
+function displayResults() {
+    const questionList = document.getElementById("questionList");
+    questionList.innerHTML = ""; // Clear current list
+
+    questions.forEach((question, index) => {
+        const listItem = document.createElement("li");
+        listItem.innerText = `Question ${index + 1}`;
+        
+        // Add flag emoji if flagged
+        if (flaggedQuestions.includes(index)) listItem.innerText += " 🚩";
+        
+        // Show correct or incorrect status
+        const isCorrect = userAnswers[index] === question.answer;
+        listItem.style.color = isCorrect ? "green" : "red";
+        listItem.innerText += isCorrect ? " ✅" : " ❌";
+        
+        listItem.onclick = () => {
+            currentQuestion = index;
+            displayQuestion();
+        };
+        questionList.appendChild(listItem);
+    });
 }
 
 function shuffleArray(array) {
