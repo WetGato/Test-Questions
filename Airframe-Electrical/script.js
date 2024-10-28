@@ -110,9 +110,15 @@ function gradeQuiz() {
         if (isCorrect) score++;
     });
 
-    document.getElementById("scoreDisplay").innerText = `Score: ${score} / ${questions.length}`;
+    // Calculate the percentage
+    const percentage = ((score / questions.length) * 100).toFixed(2); // rounded to 2 decimal places
+
+    // Update the score display with raw score and percentage
+    document.getElementById("scoreDisplay").innerText = `Score: ${score} / ${questions.length} (${percentage}%)`;
+    
     displayResults();
 }
+
 
 function displayResults() {
     const questionList = document.getElementById("questionList");
