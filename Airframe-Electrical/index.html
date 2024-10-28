@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Website with Flagging</title>
+    <style>
+        body {
+            display: flex;
+            font-family: Arial, sans-serif;
+        }
+        #sidePane {
+            width: 200px;
+            padding: 10px;
+            background-color: #f4f4f4;
+            border-right: 1px solid #ddd;
+        }
+        #quizContainer {
+            flex: 1;
+            padding: 20px;
+        }
+        .flagged {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="sidePane">
+        <h2>Questions</h2>
+        <ul id="questionList"></ul>
+    </div>
+    <div id="quizContainer">
+        <h1>Quiz</h1>
+        <button onclick="startNewQuiz()">Start New Quiz</button>
+        <p id="question"></p>
+        <div id="options"></div>
+        <button onclick="submitAnswer()">Submit Answer</button>
+        <button onclick="toggleFlag()">Flag/Unflag</button>
+        <p id="scoreDisplay"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
