@@ -1,1 +1,17 @@
-
+[
+    {
+        "question": "What's 2 + 2?",
+        "options": ["3", "4", "5"],
+        "answer": "4"
+    },
+    {
+        "question": "Capital of France?",
+        "options": ["London", "Berlin", "Paris"],
+        "answer": "Paris"
+    },
+    {
+        "question": "HTML stands for?",
+        "options": ["HyperText Markup Language", "Home Tool Markup Language", "Hyperlinks Text Mark Language"],
+        "answer": "HyperText Markup Language"
+    }
+]
