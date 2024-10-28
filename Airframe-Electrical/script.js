@@ -12,7 +12,7 @@ function loadQuestions() {
         .then(response => response.json())
         .then(data => {
             questions = data;
-            shuffleArray(questions); // Shuffle questions
+            shuffleArray(questions);
             renderQuestionList();
             displayQuestion();
             document.getElementById("scoreDisplay").innerText = `Score: Not graded yet`;
@@ -63,6 +63,7 @@ function displayQuestion() {
         
         const optionLabel = document.createElement("label");
         optionLabel.innerText = option;
+        optionLabel.htmlFor = `option${index}`;
 
         optionContainer.appendChild(optionInput);
         optionContainer.appendChild(optionLabel);
