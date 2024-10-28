@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Website with Flagging</title>
+    <title>Quiz Website with Flagging and Grading</title>
     <style>
         body {
             display: flex;
@@ -33,9 +33,11 @@
         <h1>Quiz</h1>
         <button onclick="startNewQuiz()">Start New Quiz</button>
         <p id="question"></p>
-        <div id="options"></div>
-        <button onclick="submitAnswer()">Submit Answer</button>
+        <form id="optionsForm"></form>
         <button onclick="toggleFlag()">Flag/Unflag</button>
+        <button onclick="prevQuestion()">Previous</button>
+        <button onclick="nextQuestion()">Next</button>
+        <button onclick="gradeQuiz()">Grade Quiz</button>
         <p id="scoreDisplay"></p>
     </div>
     <script src="script.js"></script>
