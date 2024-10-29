@@ -68,6 +68,12 @@ function displayQuestion() {
         optionLabel.innerText = option;
         optionLabel.htmlFor = `option${index}`;
 
+        if (quizGraded && option === questions[currentQuestion].answer) {
+            optionLabel.style.color = "green";
+            optionLabel.style.fontWeight = "bold"; // Optional: Bold the correct answer
+        }
+
+
         optionContainer.appendChild(optionInput);
         optionContainer.appendChild(optionLabel);
         optionsForm.appendChild(optionContainer);
@@ -115,8 +121,9 @@ function gradeQuiz() {
 
     // Update the score display with raw score and percentage
     document.getElementById("scoreDisplay").innerText = `Score: ${score} / ${questions.length} (${percentage}%)`;
-    
+    quizGraded = true;
     displayResults();
+    displayQuestion();
 }
 
 
