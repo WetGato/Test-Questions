@@ -25,6 +25,7 @@ function loadQuestions() {
 function startNewQuiz() {
     currentQuestion = 0;
     userAnswers = {};
+    quizGraded = false;
     flaggedQuestions = [];
     setCookie("flaggedQuestions", JSON.stringify([]), 7);
     loadQuestions();
