@@ -41,6 +41,7 @@ function renderQuestionList() {
             listItem.innerText += " 🚩"; // Add flag emoji if flagged
         }
         listItem.className = flaggedQuestions.includes(index) ? "flagged" : "";
+        listItem.style.fontWeight = currentQuestion ? "bold" : "";
         listItem.onclick = () => {
             currentQuestion = index;
             displayQuestion();
