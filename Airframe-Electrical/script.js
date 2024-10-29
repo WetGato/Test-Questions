@@ -45,6 +45,11 @@ function renderQuestionList() {
         if (currentQuestion == index) {
             listItem.style.fontWeight =  "bold";
         }
+        if (quizGraded) {
+        const isCorrect = userAnswers[index] === question.answer;
+        listItem.style.color = isCorrect ? "green" : "red";
+        listItem.innerText += isCorrect ? " ✅" : " ❌";
+        }
         listItem.onclick = () => {
             currentQuestion = index;
             displayQuestion();
@@ -135,7 +140,7 @@ function gradeQuiz() {
     displayQuestion();
 }
 
-
+/*
 function displayResults() {
     const questionList = document.getElementById("questionList");
     questionList.innerHTML = ""; // Clear current list
@@ -159,7 +164,7 @@ function displayResults() {
         questionList.appendChild(listItem);
     });
 }
-
+*/
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
