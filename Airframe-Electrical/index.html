@@ -8,6 +8,7 @@
         body {
             display: flex;
             font-family: Arial, sans-serif;
+            flex-flow: row;
         }
         #sidePane {
             width: 200px;
@@ -21,6 +22,16 @@
         }
         .flagged {
             color: red;
+        }
+        @media (max-width: 600px) {
+            #sidePane {
+                width: 100%; /* Full width when stacked */
+                order: 2;    /* Position sidebar below main content */
+            }
+            #quizContainer {
+                width: 100%; /* Full width when stacked */
+                order: 1;    /* Position main content above sidebar */
+            }
         }
     </style>
 </head>
