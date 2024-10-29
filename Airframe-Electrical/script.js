@@ -4,6 +4,7 @@ let userAnswers = {};
 let flaggedQuestions = [];
 let quizGraded = false;
 
+
 document.addEventListener("DOMContentLoaded", () => {
     loadQuestions();
 });
