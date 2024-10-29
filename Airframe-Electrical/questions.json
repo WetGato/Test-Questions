@@ -1,17 +1,147 @@
 [
     {
-        "question": "What's 2 + 2?",
-        "options": ["3", "4", "5"],
-        "answer": "4"
+        "question": "Aircraft generators are rated in ____ or ____ at a rated voltage",
+        "options": ["Kilowatts", "Volt/amps", "Joules"],
+        "answer": "Volt/amps"
     },
     {
-        "question": "Capital of France?",
-        "options": ["London", "Berlin", "Paris"],
-        "answer": "Paris"
+        "question": "Residual voltage is a result of ____ field shoes",
+        "options": ["Electric induction", "Residual voltage/magnetism in the", "Thermal expansion"],
+        "answer": "Residual voltage/magnetism in the"
     },
     {
-        "question": "HTML stands for?",
-        "options": ["HyperText Markup Language", "Home Tool Markup Language", "Hyperlinks Text Mark Language"],
-        "answer": "HyperText Markup Language"
+        "question": "A CSD/generator combo is cooled by _____, The oil is stored where?",
+        "options": ["Fan-cooled, auxiliary tank", "Oil spray, reservoir in the CSD", "Liquid nitrogen, sealed unit"],
+        "answer": "Oil spray, reservoir in the CSD"
+    },
+    {
+        "question": "What are the advantages of AC:",
+        "options": ["Easier to step up or down, less voltage drop, uses smaller wires", "Higher power output", "More stable than DC"],
+        "answer": "Easier to step up or down, less voltage drop, uses smaller wires"
+    },
+    {
+        "question": "The FAA says to consider these when selecting wire size:",
+        "options": ["Color, shape, type of connectors", "Allowable power loss, permissible voltage drop, current carrying capacity, & type of load", "Voltage only"],
+        "answer": "Allowable power loss, permissible voltage drop, current carrying capacity, & type of load"
+    },
+    {
+        "question": "Aircraft wire is normally ______.",
+        "options": ["Solid", "Stranded", "Steel-core"],
+        "answer": "Stranded"
+    },
+    {
+        "question": "When you replace copper wire it should be replaced with what type of wire? It should be how many sizes larger?",
+        "options": ["Aluminium/ 2 sizes larger", "Gold/ 1 size larger", "Steel/ same size"],
+        "answer": "Aluminium/ 2 sizes larger"
+    },
+    {
+        "question": "Electric wire is normally marked every ____.",
+        "options": ["15 inches", "12 inches", "10 inches"],
+        "answer": "15 inches"
+    },
+    {
+        "question": "When routed near flammable fluid lines wiring should be routed where?",
+        "options": ["Above about 6 inches", "Directly beside the line", "Below about 12 inches"],
+        "answer": "Above about 6 inches"
+    },
+    {
+        "question": "Conduit provides what type of protection?",
+        "options": ["Thermal", "Mechanical", "Electrical insulation"],
+        "answer": "Mechanical"
+    },
+    {
+        "question": "What type of conduit is used to minimize radio interference?",
+        "options": ["Flexible brass", "Rigid aluminum", "Plastic"],
+        "answer": "Flexible brass"
+    },
+    {
+        "question": "Conduit should be how much larger than the bundle?",
+        "options": ["10%", "25%", "50%"],
+        "answer": "25%"
+    },
+    {
+        "question": "If conduit ends without a fitting or connector, what should be done to the end of it?",
+        "options": ["Flared", "Capped", "Filed smooth"],
+        "answer": "Flared"
+    },
+    {
+        "question": "What colour insulator represents wire sizes 10-12?",
+        "options": ["Red", "Blue", "Yellow"],
+        "answer": "Yellow"
+    },
+    {
+        "question": "What colour insulator represents wire sizes 14-16?",
+        "options": ["Yellow", "Blue", "Red"],
+        "answer": "Blue"
+    },
+    {
+        "question": "What colour insulator represents wire sizes 18-22?",
+        "options": ["Red", "Blue", "White"],
+        "answer": "Red"
+    },
+    {
+        "question": "What type of crimp terminals are not used in aviation?",
+        "options": ["Hook or slot", "Ring", "Spade"],
+        "answer": "Hook or slot"
+    },
+    {
+        "question": "What type of terminals are not normally used for aircraft wiring?",
+        "options": ["Crimped", "Soldered", "Ring-type"],
+        "answer": "Soldered"
+    },
+    {
+        "question": "How many splices are allowed in one segment of wire?",
+        "options": ["1", "2", "3"],
+        "answer": "1"
+    },
+    {
+        "question": "Terminal strip studs are normally what size?",
+        "options": ["#8 or 1/4 inch", "#10 or 3/16 inch", "#6 or 1/8 inch"],
+        "answer": "#10 or 3/16 inch"
+    },
+    {
+        "question": "What is the name of the component that if located in a fire zone it is made of stainless steel?",
+        "options": ["Battery box", "Junction box", "Circuit breaker panel"],
+        "answer": "Junction box"
+    },
+    {
+        "question": "The resistance of this should not exceed 0.003 Ω?",
+        "options": ["Resistor", "Bonding jumper", "Relay coil"],
+        "answer": "Bonding jumper"
+    },
+    {
+        "question": "This component for measuring aircraft power is always connected in series?",
+        "options": ["Ammeter", "Voltmeter", "Wattmeter"],
+        "answer": "Ammeter"
+    },
+    {
+        "question": "This component for measuring aircraft power is always connected in parallel?",
+        "options": ["Ammeter", "Voltmeter", "Ohmmeter"],
+        "answer": "Voltmeter"
+    },
+    {
+        "question": "This is used to measure very high values of resistance",
+        "options": ["Ammeter", "Mega-ohmmeter", "Voltmeter"],
+        "answer": "Mega-ohmmeter"
+    },
+    {
+        "question": "You must isolate these components from a circuit to check them",
+        "options": ["Resistors", "Capacitors", "Diodes"],
+        "answer": "Diodes"
+    },
+    {
+        "question": "Rheostats are always connected in ______ with the light.",
+        "options": ["Series", "Parallel", "Feedback loop"],
+        "answer": "Series"
+    },
+    {
+        "question": "The nominal rating of switches refers to the continuous ______.",
+        "options": ["Power output", "Current rating with contacts closed", "Voltage tolerance"],
+        "answer": "Current rating with contacts closed"
+    },
+    {
+        "question": "A switch is used to control the nav lights, the lights are wired in series with the switch but ___ with each other.",
+        "options": ["In series", "In cascade", "In parallel"],
+        "answer": "In parallel"
     }
 ]
