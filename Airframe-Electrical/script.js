@@ -47,6 +47,7 @@ function renderQuestionList() {
         listItem.onclick = () => {
             currentQuestion = index;
             displayQuestion();
+            renderQuestionList();
         };
         questionList.appendChild(listItem);
     });
@@ -104,6 +105,7 @@ function nextQuestion() {
     if (currentQuestion < questions.length - 1) {
         currentQuestion++;
         displayQuestion();
+        renderQuestionList();
     }
 }
 
@@ -111,6 +113,7 @@ function prevQuestion() {
     if (currentQuestion > 0) {
         currentQuestion--;
         displayQuestion();
+        renderQuestionList();
     }
 }
 
