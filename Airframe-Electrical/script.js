@@ -136,7 +136,7 @@ function gradeQuiz() {
     // Update the score display with raw score and percentage
     document.getElementById("scoreDisplay").innerText = `Score: ${score} / ${questions.length} (${percentage}%)`;
     quizGraded = true;
-    displayQuestions();
+    renderQuestionList();
     displayQuestion();
 }
 
