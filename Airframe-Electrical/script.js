@@ -35,7 +35,7 @@ function startNewQuiz() {
 function renderQuestionList() {
     const questionList = document.getElementById("questionList");
     questionList.innerHTML = "";
-    questions.forEach((_, index) => {
+    questions.forEach((question, index) => {
         const listItem = document.createElement("li");
         listItem.innerText = `Question ${index + 1}`;
         if (flaggedQuestions.includes(index)) {
@@ -46,9 +46,9 @@ function renderQuestionList() {
             listItem.style.fontWeight =  "bold";
         }
         if (quizGraded) {
-        const isCorrect = userAnswers[index] === question.answer;
-        listItem.style.color = isCorrect ? "green" : "red";
-        listItem.innerText += isCorrect ? " ✅" : " ❌";
+            const isCorrect = userAnswers[index] === question.answer;
+            listItem.style.color = isCorrect ? "green" : "red";
+            listItem.innerText += isCorrect ? " ✅" : " ❌";
         }
         listItem.onclick = () => {
             currentQuestion = index;
