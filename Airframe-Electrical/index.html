@@ -35,10 +35,13 @@
             color: red;
         }
         @media (max-width: 600px) {
+            body {
+                display: flex;
+                flex-flow: column;
             #sidePane {
                 width: 100%; /* Full width when stacked */
                 order: 2;
-                flex-grow: 1;
+                flex: 1;
                 /* Position sidebar below main content */
             }
             #quizContainer {
