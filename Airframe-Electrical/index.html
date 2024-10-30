@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Website with Flagging and Grading</title>
+    <title>Airframe Electrical Review</title>
     <style>
         body {
             display: flex;
@@ -41,13 +41,16 @@
             #sidePane {
                 width: 100%; /* Full width when stacked */
                 order: 2;
-                flex: 1;
-                /* Position sidebar below main content */
+                padding-left: 15px;
+                padding-bottom: 30px;
+                padding-top: 15px;
+                height: calc(100vh - 45px);
             }
             #quizContainer {
-                width: 100%; /* Full width when stacked */
+                width: auto; /* Full width when stacked */
                 order: 1;
-                height: auto;/* Position main content above sidebar */
+                height: auto;
+                flex: none/* Position main content above sidebar */
             }
         }
     </style>
