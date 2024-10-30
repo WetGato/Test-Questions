@@ -11,6 +11,7 @@
             flex-flow: row wrap;
             margin: 0;
             overflow: hidden;
+            height: 100vh;
         }
         html {
             overflow: hidden;
@@ -36,11 +37,14 @@
         @media (max-width: 600px) {
             #sidePane {
                 width: 100%; /* Full width when stacked */
-                order: 2;    /* Position sidebar below main content */
+                order: 2;
+                flex-grow: 1;
+                /* Position sidebar below main content */
             }
             #quizContainer {
                 width: 100%; /* Full width when stacked */
-                order: 1;    /* Position main content above sidebar */
+                order: 1;
+                height: auto;/* Position main content above sidebar */
             }
         }
     </style>
