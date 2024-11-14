@@ -55,6 +55,9 @@ function loadQuestions(file) {
         .then(data => {
             questions = data;
             shuffleArray(questions);
+			questions.forEach(question => {
+                shuffleArray(question.options);
+            });
             renderQuestionList();
             displayQuestion();
             document.getElementById("scoreDisplay").innerText = `Score: Not graded yet`;
@@ -99,6 +102,7 @@ function renderQuestionList() {
             listItem.style.fontWeight =  "bold";
         }
         if (quizGraded) {
+			console.log(quizGraded);
             const isCorrect = userAnswers[index] === question.answer;
             listItem.style.color = isCorrect ? "green" : "red";
             listItem.innerText += isCorrect ? " ✅" : " ❌";
@@ -135,7 +139,14 @@ function displayQuestion() {
         optionContainer.appendChild(optionInput);
         optionContainer.appendChild(optionLabel);
         optionsForm.appendChild(optionContainer);
+		
+		        if (quizGraded && option === questions[currentQuestion].answer) {
+            optionLabel.style.color = "green";
+            optionLabel.style.fontWeight = "bold"; // Optional: Bold the correct answer
+        }
     });
+	
+	
 }
 
 function selectOption(selected) {

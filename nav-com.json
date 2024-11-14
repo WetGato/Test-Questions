@@ -1,0 +1,32 @@
+[
+	{
+		"question": "What is the VHF radio wave frequency range?",
+		"options": ["3 - 30 MHz", "30 - 300 MHz", "30 - 300 KHz"],
+		"answer": "30 - 300 MHz"
+	},
+	{
+		"question": "What types of waves are line of sight?",
+		"options": ["Space Wave", "Ground Wave", "Sky Wave"],
+		"answer": "Space Wave"
+	},
+	{
+		"question": "What type of antenna is typically a vertical metallic rod approxamitly a ¼ wavelength in length?",
+		"options": ["Marconi monopole", "Hertz Dipole", "Dummy antenna"],
+		"answer": "Marconi monopole"
+	},
+	{
+		"question": "What is the bend radius for coax cable?",
+		"options": ["6 x diameter", "10 x diameter", "3 x the diameter"],
+		"answer": "6 x diameter"
+	},
+	{
+		"question": "What is used in higher frequency ranges to direct signal energy to the antenna in radar systems?",
+		"options": ["Waveguide", "Coax cable", "Dummy antenna"],
+		"answer": "Waveguide"
+	},
+	{
+		"question": "How many antennas are utilized in the ADF system?",
+		"options": ["2", "10", "none, it uses GPS"],
+		"answer": "2"
+	}
+]
