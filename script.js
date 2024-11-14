@@ -11,6 +11,8 @@ function loadSelectedJsonFile() {
     const selectedFile = dropdown.value;
 
     if (!selectedFile) return;
+	flaggedQuestions = [];
+	quizGraded = false;
 
     quizTitle = dropdown.options[dropdown.selectedIndex].text; // Get quiz title from dropdown
     document.getElementById("title").innerText = quizTitle; // Update quiz title in the <h1>
