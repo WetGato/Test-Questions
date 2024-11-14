@@ -37,6 +37,17 @@ function loadIndex() {
         });
 }
 
+function toggleFlag() {
+    const questionIndex = currentQuestion;
+    if (flaggedQuestions.includes(questionIndex)) {
+        flaggedQuestions = flaggedQuestions.filter(q => q !== questionIndex);
+    } else {
+        flaggedQuestions.push(questionIndex);
+    }
+    setCookie("flaggedQuestions", JSON.stringify(flaggedQuestions), 7);
+    renderQuestionList();
+}
+
 function loadQuestions(file) {
 	console.log (file);
     fetch(file)
@@ -53,7 +64,7 @@ function loadQuestions(file) {
         });
 }
 
-function renderQuestionList() {
+/*function renderQuestionList() {
     const questionList = document.getElementById("questionList");
     questionList.innerHTML = "";
     questions.forEach((question, index) => {
@@ -64,6 +75,33 @@ function renderQuestionList() {
         }
         if (currentQuestion === index) {
             listItem.style.fontWeight = "bold";
+        }
+        listItem.onclick = () => {
+            currentQuestion = index;
+            displayQuestion();
+            renderQuestionList();
+        };
+        questionList.appendChild(listItem);
+    });
+}*/
+
+function renderQuestionList() {
+    const questionList = document.getElementById("questionList");
+    questionList.innerHTML = "";
+    questions.forEach((question, index) => {
+        const listItem = document.createElement("li");
+        listItem.innerText = `Question ${index + 1}`;
+        if (flaggedQuestions.includes(index)) {
+            listItem.innerText += " 🚩"; // Add flag emoji if flagged
+        }
+        listItem.className = flaggedQuestions.includes(index) ? "flagged" : "";
+        if (currentQuestion == index) {
+            listItem.style.fontWeight =  "bold";
+        }
+        if (quizGraded) {
+            const isCorrect = userAnswers[index] === question.answer;
+            listItem.style.color = isCorrect ? "green" : "red";
+            listItem.innerText += isCorrect ? " ✅" : " ❌";
         }
         listItem.onclick = () => {
             currentQuestion = index;
@@ -120,7 +158,7 @@ function prevQuestion() {
     }
 }
 
-function gradeQuiz() {
+/*function gradeQuiz() {
     let score = 0;
     questions.forEach((question, index) => {
         const isCorrect = userAnswers[index] === question.answer;
@@ -132,12 +170,36 @@ function gradeQuiz() {
     quizGraded = true;
     renderQuestionList();
 }
-
+*/
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [array[i], array[j]] = [array[j], array[i]];
     }
+}
+
+function setCookie(name, value, days) {
+    const date = new Date();
+    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+    const expires = `expires=${date.toUTCString()}`;
+    document.cookie = `${name}=${value};${expires};path=/`;
+}
+
+function gradeQuiz() {
+    let score = 0;
+    questions.forEach((question, index) => {
+        const isCorrect = userAnswers[index] === question.answer;
+        if (isCorrect) score++;
+    });
+
+    // Calculate the percentage
+    const percentage = ((score / questions.length) * 100).toFixed(2); // rounded to 2 decimal places
+
+    // Update the score display with raw score and percentage
+    document.getElementById("scoreDisplay").innerText = `Score: ${score} / ${questions.length} (${percentage}%)`;
+    quizGraded = true;
+    renderQuestionList();
+    displayQuestion();
 }
 
 // Load index.json and populate the dropdown when the page is ready
