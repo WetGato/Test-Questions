@@ -78,12 +78,83 @@
 	},
 	{
 		"question": "What system indicates how far from the end of the runway you are?",
-		"options": ["Localizer", "Glideslope", "Marker beacon"],
+		"options": ["Localizer", "Glideslope", "Marker Beacon"],
 		"answer": "Marker Beacon"
 	},
 	{
 		"question": "The marker beacon system recieves all signals at what frequency?",
 		"options": ["75MHz", "750MHz", "75KHz"],
 		"answer": "75MHz"
+	},
+	{
+		"question": "What colour is your outer marker and what frequency does it transmitt?",
+		"options": ["Blue & 400Hz", "Amber & 1300 Hz", "White & 3000Hz"],
+		"answer": "Blue & 400Hz"
+	},
+	{
+		"question": "What colour is your middle marker and what frequency does it transmitt?",
+		"options": ["Blue & 400Hz", "Amber & 1300 Hz", "White & 3000Hz"],
+		"answer": "Amber & 1300 Hz"
+	},{
+		"question": "What colour is your inner marker and what frequency does it transmitt?",
+		"options": ["Blue & 400Hz", "Amber & 1300 Hz", "White & 3000Hz"],
+		"answer": "White & 3000Hz"
+	},
+	{
+		"question": "DME (Distance Measuring Equipment) systems give a ______ distance to the station instead of a horizontal ground distance",
+		"options": ["Slant Range", "Vertical", "Inverse"],
+		"answer": "Slant Range"
+	},
+	{
+		"question": "In a DME system, the reply must be delayed in close range operations. How long is the delay?",
+		"options": ["50 microseconds", "50 miliseconds", "50 seconds"],
+		"answer": "50 microseconds"
+	},
+	{
+		"question": "The GPS system has ______ satellites. How many are active? How many are inactive?",
+		"options": ["24 / 21 / 3", "25 / 25 / 0", "30 / 20 / 10"],
+		"answer": "24 / 21 / 3"
+	},
+	{
+		"question": "What systems allow for percise civil GPS based approach and langing systems?",
+		"options": ["LAAS (Local-area augmentation system) & WAAS (Wide area augmentation system)", 
+					"PAS (Percise augmentation system) & AAS (Accurate augmentation system", 
+					"Glideslope and Localizer"],
+		"answer": "LAAS (Local-area augmentation system) & WAAS (Wide area augmentation system)"
+	},
+	{
+		"question": "Which system was developed to increase the accuracy of GPS?",
+		"options": ["WAAS (Wide area augmentation system)", "EAGPS (Extremely Accurate GPS)", "DME (Distance Measuring Equipment)"],
+		"answer": "WAAS"
+	},
+	{
+		"question": "With the ATC transponder ______ sets of interrogation pulses of ______ energy are transmittes in the atmosphere from a ground station using a secondary surveillance radar system. The interrogation energy is sent at ______.",
+		"options": ["2 / UHF / 1030 MHz", "3 / VHF / 30 MHz", "2 / VHF / 30 MHz"],
+		"answer": "2 / UHF / 1030 MHz"
+	},
+	{
+		"question": "When an aircraft recieves the interrogation signal, a reply is sent back ______. The reply is sent at ______."
+		"options": ["Automatically / 1090 MHz", "By the pilot / 1030MHz", "Automatically / 1030MHz"],
+		"answer": "Automatically / 1090 MHz"
+	},
+	{
+		"question": "How many modes does an ATC transponder system have? What are they?"
+		"options": ["3 / A, C, & S", "3 / A, B, & C", "2 / A & S"],
+		"answer": "3 / A, C, & S"
+	},
+	{
+		"question": "Mode A displays the ______.",
+		"options": ["ID Code", "Altitude", "Atitude"],
+		"answer": "ID Code"
+	},
+	{
+		"question": "Mode C displays the ______.",
+		"options": ["ID Code & Pressure Altitude", "ID Code & Atitude", "Atitude & Pressure Altitude"],
+		"answer": "ID Code & Pressure Altitude"
+	},
+	{
+		"question": "Mode S uses what system? What does TCAS stand for?",
+		"options": ["TCAS / Traffic Collision Advoidance System", "Localizer / Traffic Combustion Advisory System", "TCAS / Tree Collision Advoidance System"],
+		"answer": "TCAS / Traffic Collision Advoidance System"
 	}
 ]
