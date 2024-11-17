@@ -28,5 +28,62 @@
 		"question": "How many antennas are utilized in the ADF system?",
 		"options": ["2", "10", "none, it uses GPS"],
 		"answer": "2"
+	},
+	{
+		"question": "What are the antennas utiized in the ADF system?",
+		"options": ["loop and sense", "Coax and Dummy antenna", "Hertz Dipole and Marconi monopole"],
+		"answer": "loop and sense"
+	},
+	{
+		"question": "Indication of VOR has nothing to do with the ______ of the aircraft.",
+		"options": ["Heading", "Frequency", "Velocity"],
+		"answer": "Heading"
+	},
+	{
+		"question": "How many statute miles are in one nautical mile?",
+		"options": ["1.15", "2.25", "1.0"],
+		"answer": "1.15"
+	},
+	{
+		"question": "VOR gives your location ______.",
+		"options": ["Relative to the station", "Relative to true north", "Relative to your destination"],
+		"answer": "Relative to the station"
+	},
+	{
+		"question": "The lines drawn from the VOR station are called ______.",
+		"options": ["Radials", "Linears", "Latitudes"],
+		"answer": "Radials"
+	},
+	{
+		"question": "What is the preferred location and positioning of a VOR antenna on a light aircraft?",
+		"options": ["On top of the cabin with the apex of the V pointing forward", 
+					"On top of the cabin with the apex of the V pointing backward", 
+					"On bottom of the cabin with the apex of the V pointing forward"],
+		"answer": "On top of the cabin with the apex of the V pointing forward"
+	},
+	{
+		"question": "What systems are part of ILS?",
+		"options": ["Localizer, glideslope & marker beacon", "Localizer, Magnetic compass, VOR", "VOR, altitude, atitude"],
+		"answer": "Localizer, glideslope & marker beacon"
+	},
+	{
+		"question": "What system directs the pilot along the center line of the runway?",
+		"options": ["Localizer", "Glideslope", "Marker beacon"],
+		"answer": "Localizer"
+	},
+	{
+		"question": "What system provides the correct angle of decent?",
+		"options": ["Localizer", "Glideslope", "Marker beacon"],
+		"answer": "Glideslope"
+	},
+	{
+		"question": "What system indicates how far from the end of the runway you are?",
+		"options": ["Localizer", "Glideslope", "Marker beacon"],
+		"answer": "Marker Beacon"
+	},
+	{
+		"question": "The marker beacon system recieves all signals at what frequency?",
+		"options": ["75MHz", "750MHz", "75KHz"],
+		"answer": "75MHz"
 	}
 ]
