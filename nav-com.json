@@ -31,8 +31,8 @@
 	},
 	{
 		"question": "What are the antennas utiized in the ADF system?",
-		"options": ["loop and sense", "Coax and Dummy antenna", "Hertz Dipole and Marconi monopole"],
-		"answer": "loop and sense"
+		"options": ["Loop and Sense", "Coax and Dummy antenna", "Hertz Dipole and Marconi monopole"],
+		"answer": "Loop and Sense"
 	},
 	{
 		"question": "Indication of VOR has nothing to do with the ______ of the aircraft.",
@@ -125,7 +125,7 @@
 	{
 		"question": "Which system was developed to increase the accuracy of GPS?",
 		"options": ["WAAS (Wide area augmentation system)", "EAGPS (Extremely Accurate GPS)", "DME (Distance Measuring Equipment)"],
-		"answer": "WAAS"
+		"answer": "WAAS (Wide area augmentation system)"
 	},
 	{
 		"question": "With the ATC transponder ______ sets of interrogation pulses of ______ energy are transmittes in the atmosphere from a ground station using a secondary surveillance radar system. The interrogation energy is sent at ______.",
@@ -133,12 +133,12 @@
 		"answer": "2 / UHF / 1030 MHz"
 	},
 	{
-		"question": "When an aircraft recieves the interrogation signal, a reply is sent back ______. The reply is sent at ______."
+		"question": "When an aircraft recieves the interrogation signal, a reply is sent back ______. The reply is sent at ______.",
 		"options": ["Automatically / 1090 MHz", "By the pilot / 1030MHz", "Automatically / 1030MHz"],
 		"answer": "Automatically / 1090 MHz"
 	},
 	{
-		"question": "How many modes does an ATC transponder system have? What are they?"
+		"question": "How many modes does an ATC transponder system have? What are they?",
 		"options": ["3 / A, C, & S", "3 / A, B, & C", "2 / A & S"],
 		"answer": "3 / A, C, & S"
 	},
@@ -156,5 +156,195 @@
 		"question": "Mode S uses what system? What does TCAS stand for?",
 		"options": ["TCAS / Traffic Collision Advoidance System", "Localizer / Traffic Combustion Advisory System", "TCAS / Tree Collision Advoidance System"],
 		"answer": "TCAS / Traffic Collision Advoidance System"
+	},
+	{
+		"question": "What does the Ident button on the ATC control panel do when it is pressed?",
+		"options": ["Highlights the aircraft on the ATC screen", "Outlines the airplane in the sky", "Gives ATC the tail number of the aircraft"],
+		"answer": "Highlights the aircraft on the ATC screen"
+	},
+	{
+		"question": "What is the code for hijack?",
+		"options": ["7500", "7700", "7777"],
+		"answer": "7500"
+	},
+	{
+		"question": "What is the code for emergency?",
+		"options": ["7700", "7500", "7777"],
+		"answer": "7700"
+	},
+	{
+		"question": "How often is a test required of the ATC transponder system?",
+		"options": ["24 months", "12 months", "before every flight"],
+		"answer": "24 months"
+	},
+	{
+		"question": "What FAR requires a test of the ATC transponder system?",
+		"options": ["91.413", "43.11", "43.9"],
+		"answer": "91.413"
+	},
+	{
+		"question": "What system monitors the aircraft's surrounding airspace & warns of an impending mid-air collision?",
+		"options": ["TCAS", "GPWS", "Localizer"],
+		"answer": "TCAS"
+	},
+	{
+		"question": "TCAS uses mode S to do what?",
+		"options": ["Identify itself with other aircraft", "Display the ID code", "Display the pressure altitude"],
+		"answer": "Identify itself with other aircraft"
+	},
+	{
+		"question": "What system is used to measure altitude above terrain?",
+		"options": ["Radar Altimeter", "Pressure Altimeter", "Vertical Speed Indicator"],
+		"answer": "Radar Altimeter"
+	},
+	{
+		"question": "What does GPWS stand for?",
+		"options": ["Ground Proximity Warning System", "Grilled Provolone With Pastrami", "Global Positioning With Satellite"],
+		"answer": "Ground Proximity Warning System"
+	},
+	{
+		"question": "What is the cause of most aviation accidents?",
+		"options": ["Controlled flight into terrain", "Pilot was not in cockpit", "Passenger flew plane"],
+		"answer": "Controlled flight into terrain"
+	},
+	{
+		"question": "GPWS alerts you in the form of ______ warnings.",
+		"options": ["Aural/voice", "Lights", "Co-pilot"],
+		"answer": "Aural/voice"
+	},
+	{
+		"question": "What other systems are tied into the GPWS?",
+		"options": ["Flaps, Landing Gear, & Radar Altimeter", "Flaps, Landing Gear, & Pressure Altimeter", "Lights, Camera, & Action"],
+		"answer": "Flaps, Landing Gear, & Radar Altimeter"
+	},
+	{
+		"question": "What does ELT stand for?",
+		"options": ["Emergency Locator Transmitter", "Egg, Lettuce, & Tomato", "Engines Lost Transmission"],
+		"answer": "Emergency Locator Transmitter"
+	},
+	{
+		"question": "Your ELT begins to transmitt due to a severe impact ______ to the longitudinal axis.",
+		"options": ["Parallel", "Perpenducular", "Against"],
+		"answer": "Parallel"
+	},
+	{
+		"question": "What frequencies do ELTs transmitt on?",
+		"options": ["121.5MHz, 243MHz, & 406MHz", "107.3MHz, 104.9MHz, & 98.3MHz", "400Hz, 1300Hz, 4000Hz"],
+		"answer": "121.5MHz, 243MHz, & 406MHz"
+	},
+	{
+		"question": "What is the preferred location on an ELT?",
+		"options": ["As far aft as practical but forward of the vertical fin.", "As far forward as possible, but aft of the first firewall", "With the pilot"],
+		"answer": "As far aft as practical but forward of the vertical fin."
+	},
+	{
+		"question": "How often are the batteries changes in a 121.5 ELT?",
+		"options": ["Every 2 years or after 1 hour of cumulative use", "After every flight", "After a crash"],
+		"answer": "Every 2 years or after 1 hour of cumulative use"
+	},
+	{
+		"question": "How often are ELTs tested?",
+		"options": ["Annually", "Weekly", "Before each flight"],
+		"answer": "Annually"
+	},
+	{
+		"question": "What does dummy load mean?",
+		"options": ["No emission of signal", "A short to ground", "Using a dumbell as the load"],
+		"answer": "No emission of signal"
+	},
+	{
+		"question": "When is your ELT test conducted?",
+		"options": ["Within the first 5 minutes of every hour", "Within the first 15 minutes of every hour", "At 6:45 AM on the first Sunday of the month"],
+		"answer": "Within the first 5 minutes of every hour"
+	},
+	{
+		"question": "What does FDR stand for?",
+		"options": ["Flight Data Recorder", "Franklin Delano Roosevelt", "Fire Department Rescue"],
+		"answer": "Flight Data Recorder"
+	},
+	{
+		"question": "How many hours does an FDR record?",
+		"options": ["25 hours", "50 hours", "10,000 hours"],
+		"answer": "25 hours"
+	},
+	{
+		"question": "This system's primary purpose is to relieve the pilot of control of the aircraft during long periods of flight.",
+		"options": ["Autopilot", "Co-pilot", "Passenger"],
+		"answer": "Autopilot"
+	},
+	{
+		"question": "Error Sensing in an autopilot system is sensed by gyros for ______",
+		"options": ["Altitude and heading", "Pilot and co-pilot", "Atitude and ground speed"],
+		"answer": "Altitude and heading"
+	},
+	{
+		"question": "The gyro in an attitude indicator senses any deviation in ______",
+		"options": ["Pitch or roll", "Pitch or Yaw", "Roll or Yaw"],
+		"answer": "Pitch or roll"
+	},
+	{
+		"question": "What is used to perform the correction in an autopilot system?",
+		"options": ["Servo", "Pilot", "Co-pilot"],
+		"answer": "Servo"
+	},
+	{
+		"question": "What does the follow up signal in an autopilot system do?",
+		"options": ["Nulls out the input signals", "Follows another plane", "Follows up with the pilot to ensure everything is good"],
+		"answer": "Nulls out the input signals"
+	},
+	{
+		"question": "What are the 3 channels of the autopilot system?",
+		"options": ["Aileron, Rudder, & Elevator", "Wings, Propeller, & Tail", "Heading, Speed, & Elevation"],
+		"answer": "Aileron, Rudder, & Elevator"
+	},
+	{
+		"question": "What flight control controls the aircraft around the longitudinal axis and what is that movement called?",
+		"options": ["Aileron & Roll", "Rudder & Yaw", "Elevator & Pitch"],
+		"answer": "Aileron & Roll"
+	},
+	{
+		"question": "What flight control controls the aircraft around the vertical axis and what is that movement called?",
+		"options": ["Aileron & Roll", "Rudder & Yaw", "Elevator & Pitch"],
+		"answer": "Rudder & Yaw"
+	},
+	{
+		"question": "What flight control controls the aircraft around the lateral axis and what is that movement called?",
+		"options": ["Aileron & Roll", "Rudder & Yaw", "Elevator & Pitch"],
+		"answer": "Elevator & Pitch"
+	},
+	{
+		"question": "When performing an autopilot check you must allow the gyros to ______ and the amplifier to ______ before engaging auopilot.",
+		"options": ["Come up to speed / warm up", "Fully stop / cool down", "Come up to speed / cool down"],
+		"answer": "Come up to speed / warm up"
+	},
+	{
+		"question": "The FMC (Flight Management Computer) monitors flight parameters and performs ______ functions.",
+		"options": ["Autopilot", "Engine", "Flight Attendant"],
+		"answer": "Autopilot"
+	},
+	{
+		"question": "What is a dutch roll?",
+		"options": ["A combo of yawing and rolling", "A barrel roll from the Netherlands", "A tasty snack for the pilot"],
+		"answer": "A combo of yawing and rolling"
+	},
+	{
+		"question": "What is used to combat dutch roll?",
+		"options": ["Yaw damper", "Roll damper", "Pitch damper"],
+		"answer": "Yaw damper"
+	},
+	{
+		"question": "What is the formula for drag?",
+		"options": ["Drag = .000327(Frontal Area)(VNE)²", "Drag = MC²", "Drag = Force x Distance"],
+		"answer": "Drag = .000327(Frontal Area)(VNE)²"
+	},
+	{
+		"question": "Why is a gasket or sealant normally used during the installation of an antenna?",
+		"options": ["To prevent the entry of moisture into the aircraft fuselage", "To prevent static buildup", "To insulate the antenna from the aircraft fuselage"],
+		"answer": "To prevent the entry of moisture into the aircraft fuselage"
+	},
+	{
+		"question": "If the static dischargers are used correctly, they will dissipate static charges while the current level is ______.",
+		"options": ["Low", "Nonexistant", "High"],
+		"answer": "Low"
 	}
 ]
