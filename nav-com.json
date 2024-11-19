@@ -274,8 +274,8 @@
 	},
 	{
 		"question": "Error Sensing in an autopilot system is sensed by gyros for ______",
-		"options": ["Altitude and heading", "Pilot and co-pilot", "Atitude and ground speed"],
-		"answer": "Altitude and heading"
+		"options": ["Atitude and heading", "Pilot and co-pilot", "Atitude and ground speed"],
+		"answer": "Atitude and heading"
 	},
 	{
 		"question": "The gyro in an attitude indicator senses any deviation in ______",
