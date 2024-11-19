@@ -10,7 +10,7 @@
 		"answer": "Space Wave"
 	},
 	{
-		"question": "What type of antenna is typically a vertical metallic rod approxamitly a ¼ wavelength in length?",
+		"question": "What type of antenna is typically a vertical metallic rod approximately a ¼ wavelength in length?",
 		"options": ["Marconi monopole", "Hertz Dipole", "Dummy antenna"],
 		"answer": "Marconi monopole"
 	},
@@ -30,7 +30,7 @@
 		"answer": "2"
 	},
 	{
-		"question": "What are the antennas utiized in the ADF system?",
+		"question": "What are the antennas utilized in the ADF system?",
 		"options": ["Loop and Sense", "Coax and Dummy antenna", "Hertz Dipole and Marconi monopole"],
 		"answer": "Loop and Sense"
 	},
@@ -67,7 +67,7 @@
 		"answer": "Localizer, glideslope & marker beacon"
 	},
 	{
-		"question": "What system directs the pilot along the center line of the runway?",
+		"question": "What system directs the pilot along the centre line of the runway?",
 		"options": ["Localizer", "Glideslope", "Marker beacon"],
 		"answer": "Localizer"
 	},
@@ -82,21 +82,21 @@
 		"answer": "Marker Beacon"
 	},
 	{
-		"question": "The marker beacon system recieves all signals at what frequency?",
+		"question": "The marker beacon system receives all signals at what frequency?",
 		"options": ["75MHz", "750MHz", "75KHz"],
 		"answer": "75MHz"
 	},
 	{
-		"question": "What colour is your outer marker and what frequency does it transmitt?",
+		"question": "What colour is your outer marker and what frequency does it transmit?",
 		"options": ["Blue & 400Hz", "Amber & 1300 Hz", "White & 3000Hz"],
 		"answer": "Blue & 400Hz"
 	},
 	{
-		"question": "What colour is your middle marker and what frequency does it transmitt?",
+		"question": "What colour is your middle marker and what frequency does it transmit?",
 		"options": ["Blue & 400Hz", "Amber & 1300 Hz", "White & 3000Hz"],
 		"answer": "Amber & 1300 Hz"
 	},{
-		"question": "What colour is your inner marker and what frequency does it transmitt?",
+		"question": "What colour is your inner marker and what frequency does it transmit?",
 		"options": ["Blue & 400Hz", "Amber & 1300 Hz", "White & 3000Hz"],
 		"answer": "White & 3000Hz"
 	},
@@ -107,7 +107,7 @@
 	},
 	{
 		"question": "In a DME system, the reply must be delayed in close range operations. How long is the delay?",
-		"options": ["50 microseconds", "50 miliseconds", "50 seconds"],
+		"options": ["50 microseconds", "50 milliseconds", "50 seconds"],
 		"answer": "50 microseconds"
 	},
 	{
@@ -116,9 +116,9 @@
 		"answer": "24 / 21 / 3"
 	},
 	{
-		"question": "What systems allow for percise civil GPS based approach and langing systems?",
+		"question": "What systems allow for precise civil GPS based approach and landing systems?",
 		"options": ["LAAS (Local-area augmentation system) & WAAS (Wide area augmentation system)", 
-					"PAS (Percise augmentation system) & AAS (Accurate augmentation system", 
+					"PAS (Precise augmentation system) & AAS (Accurate augmentation system", 
 					"Glideslope and Localizer"],
 		"answer": "LAAS (Local-area augmentation system) & WAAS (Wide area augmentation system)"
 	},
@@ -128,12 +128,12 @@
 		"answer": "WAAS (Wide area augmentation system)"
 	},
 	{
-		"question": "With the ATC transponder ______ sets of interrogation pulses of ______ energy are transmittes in the atmosphere from a ground station using a secondary surveillance radar system. The interrogation energy is sent at ______.",
+		"question": "With the ATC transponder ______ sets of interrogation pulses of ______ energy are transmits in the atmosphere from a ground station using a secondary surveillance radar system. The interrogation energy is sent at ______.",
 		"options": ["2 / UHF / 1030 MHz", "3 / VHF / 30 MHz", "2 / VHF / 30 MHz"],
 		"answer": "2 / UHF / 1030 MHz"
 	},
 	{
-		"question": "When an aircraft recieves the interrogation signal, a reply is sent back ______. The reply is sent at ______.",
+		"question": "When an aircraft receives the interrogation signal, a reply is sent back ______. The reply is sent at ______.",
 		"options": ["Automatically / 1090 MHz", "By the pilot / 1030MHz", "Automatically / 1030MHz"],
 		"answer": "Automatically / 1090 MHz"
 	},
@@ -144,18 +144,18 @@
 	},
 	{
 		"question": "Mode A displays the ______.",
-		"options": ["ID Code", "Altitude", "Atitude"],
+		"options": ["ID Code", "Altitude", "Attitude"],
 		"answer": "ID Code"
 	},
 	{
 		"question": "Mode C displays the ______.",
-		"options": ["ID Code & Pressure Altitude", "ID Code & Atitude", "Atitude & Pressure Altitude"],
+		"options": ["ID Code & Pressure Altitude", "ID Code & Attitude", "Attitude & Pressure Altitude"],
 		"answer": "ID Code & Pressure Altitude"
 	},
 	{
 		"question": "Mode S uses what system? What does TCAS stand for?",
-		"options": ["TCAS / Traffic Collision Advoidance System", "Localizer / Traffic Combustion Advisory System", "TCAS / Tree Collision Advoidance System"],
-		"answer": "TCAS / Traffic Collision Advoidance System"
+		"options": ["TCAS / Traffic Collision Avoidance System", "Localizer / Traffic Combustion Advisory System", "TCAS / Tree Collision Advoidance System"],
+		"answer": "TCAS / Traffic Collision Avoidance System"
 	},
 	{
 		"question": "What does the Ident button on the ATC control panel do when it is pressed?",
@@ -223,12 +223,12 @@
 		"answer": "Emergency Locator Transmitter"
 	},
 	{
-		"question": "Your ELT begins to transmitt due to a severe impact ______ to the longitudinal axis.",
-		"options": ["Parallel", "Perpenducular", "Against"],
+		"question": "Your ELT begins to transmit due to a severe impact ______ to the longitudinal axis.",
+		"options": ["Parallel", "Perpendicular", "Against"],
 		"answer": "Parallel"
 	},
 	{
-		"question": "What frequencies do ELTs transmitt on?",
+		"question": "What frequencies do ELTs transmit on?",
 		"options": ["121.5MHz, 243MHz, & 406MHz", "107.3MHz, 104.9MHz, & 98.3MHz", "400Hz, 1300Hz, 4000Hz"],
 		"answer": "121.5MHz, 243MHz, & 406MHz"
 	},
@@ -249,7 +249,7 @@
 	},
 	{
 		"question": "What does dummy load mean?",
-		"options": ["No emission of signal", "A short to ground", "Using a dumbell as the load"],
+		"options": ["No emission of signal", "A short to ground", "Using a dumbbell as the load"],
 		"answer": "No emission of signal"
 	},
 	{
@@ -274,8 +274,8 @@
 	},
 	{
 		"question": "Error Sensing in an autopilot system is sensed by gyros for ______",
-		"options": ["Atitude and heading", "Pilot and co-pilot", "Atitude and ground speed"],
-		"answer": "Atitude and heading"
+		"options": ["Attitude and heading", "Pilot and co-pilot", "Attitude and ground speed"],
+		"answer": "Attitude and heading"
 	},
 	{
 		"question": "The gyro in an attitude indicator senses any deviation in ______",
@@ -313,7 +313,7 @@
 		"answer": "Elevator & Pitch"
 	},
 	{
-		"question": "When performing an autopilot check you must allow the gyros to ______ and the amplifier to ______ before engaging auopilot.",
+		"question": "When performing an autopilot check you must allow the gyros to ______ and the amplifier to ______ before engaging autopilot.",
 		"options": ["Come up to speed / warm up", "Fully stop / cool down", "Come up to speed / cool down"],
 		"answer": "Come up to speed / warm up"
 	},
@@ -323,12 +323,12 @@
 		"answer": "Autopilot"
 	},
 	{
-		"question": "What is a dutch roll?",
+		"question": "What is a Dutch roll?",
 		"options": ["A combo of yawing and rolling", "A barrel roll from the Netherlands", "A tasty snack for the pilot"],
 		"answer": "A combo of yawing and rolling"
 	},
 	{
-		"question": "What is used to combat dutch roll?",
+		"question": "What is used to combat Dutch roll?",
 		"options": ["Yaw damper", "Roll damper", "Pitch damper"],
 		"answer": "Yaw damper"
 	},
