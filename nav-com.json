@@ -334,8 +334,8 @@
 	},
 	{
 		"question": "What is the formula for drag?",
-		"options": ["Drag = .000327(Frontal Area)(VNE)²", "Drag = MC²", "Drag = Force x Distance"],
-		"answer": "Drag = .000327(Frontal Area)(VNE)²"
+		"options": ["Drag = .000327(Frontal Area)(VNE²)", "Drag = MC²", "Drag = Force x Distance"],
+		"answer": "Drag = .000327(Frontal Area)(VNE²)"
 	},
 	{
 		"question": "Why is a gasket or sealant normally used during the installation of an antenna?",
